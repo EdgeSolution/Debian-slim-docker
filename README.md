@@ -10,8 +10,6 @@ Download DebianSlim project
 
 Run the Debian slim docker image for AndroidDM
 
-# ./build-docker.sh
-
 # v1.0 version
  - New features
   - add novnc and repeater
