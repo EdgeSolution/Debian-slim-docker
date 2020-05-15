@@ -1,6 +1,5 @@
 #!/bin/sh
-GITHUBREPO=Debian-slim-docker
 
-git clone https://github.com/EdgeSolution/$GITHUBREPO.git
+git pull
 
-docker-compose -f $GITHUBREPO/docker-compose.yml up -d --build
+docker-compose -f docker-compose.yml up -d --build
