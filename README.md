@@ -7,8 +7,8 @@ Run the Debian slim docker image for AndroidDM
 # v1.0 version
  - New features
  - docker images version
-  - edgesolution/androiddm-javaenv-slim:v1.6.5 
-  - edgesolution/androiddm-astore-slim:v1.6/5
+  - edgesolution/androiddm-javaenv-slim:v1.6.6 
+  - edgesolution/androiddm-astore-slim:v1.6.6
   - edgesolution/androiddm-mosquitto:v1.0
   - edgesolution/androiddm-novnc:v1.0
   - postgres:9.4
