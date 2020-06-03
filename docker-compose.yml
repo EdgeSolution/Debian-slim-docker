@@ -16,9 +16,6 @@ services:
                 - "8080:8080"
         command: /root/adv/run.sh
         container_name: m2mserver
-        links:
-                - "mqtt"
-                - "db"
         networks: 
                 - advnet
         environment: 
@@ -56,8 +53,6 @@ services:
                 - "30002:80"
         command: /root/adv/run.sh
         container_name: aimlink_astore
-        links:
-                - "db"
         networks: 
                 - advnet
         environment: 
