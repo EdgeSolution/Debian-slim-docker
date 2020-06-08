@@ -4,7 +4,7 @@ Download DebianSlim project
 
 Run the Debian slim docker image for AndroidDM
 
-# v1.0 version
+# v1.0.0 version
  - New features
  - docker images version
   - edgesolution/androiddm-javaenv-slim:v1.6.6 
