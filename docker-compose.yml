@@ -8,7 +8,7 @@ services:
                 - db
         volumes:
                 - ./java-env/vnctoken:/root/adv/vnctoken 
-                - ./java-env/logs:/root/logs
+                - ./java-env/logs:/root/adv/logs
                 - ./java-env/license:/root/adv/license
                 - ./java-env/solutionAppIcon:/root/adv/solutionAppIcon
                 - /sys:/sys
@@ -46,7 +46,7 @@ services:
         depends_on:
                 - db
         volumes:
-                - ./astore/logs:/home/logs
+                - ./astore/logs:/root/adv/logs
                 - ./astore/data:/var/www/html/DEPLOYREPO
         ports:
                 - "30001:30019"
