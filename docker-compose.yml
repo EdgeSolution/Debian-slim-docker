@@ -1,14 +1,14 @@
 version: '3'
 services:
      androidlink: 
-        image: edgesolution/androiddm-javaenv-slim:v1.0.0
+        image: edgesolution/androiddm-javaenv-slim:v1.0.1
         restart: always
         depends_on:
                 - mqtt
                 - db
         volumes:
                 - ./java-env/vnctoken:/root/adv/vnctoken 
-                - ./java-env/logs:/root/logs
+                - ./java-env/logs:/root/adv/logs
                 - ./java-env/license:/root/adv/license
                 - ./java-env/solutionAppIcon:/root/adv/solutionAppIcon
                 - /sys:/sys
@@ -21,7 +21,7 @@ services:
         environment: 
                 - TZ=Asia/Shanghai
      mqtt:
-        image: edgesolution/androiddm-mosquitto:v1.0
+        image: edgesolution/androiddm-mosquitto:v1.1
         restart: always
         ports: 
                 - "1883:1883"
@@ -46,7 +46,7 @@ services:
         depends_on:
                 - db
         volumes:
-                - ./astore/logs:/home/logs
+                - ./astore/logs:/root/adv/logs
                 - ./astore/data:/var/www/html/DEPLOYREPO
         ports:
                 - "30001:30019"
